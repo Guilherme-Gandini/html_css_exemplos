@@ -1,1 +1,54 @@
 /* Digitação (Aqui) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    /* background: linear-gradient(45deg, rgb(255, 255, 0), #00eeff); */
+    /* background: radial-gradient(circle, yellow, #0011ff); */
+    background:  conic-gradient(at top left, red, #4c00ff);
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background-color:rgb(107, 0, 189); 
+    padding: 30px;
+    width: 400px;
+    border-radius: 75px;
+    margin: auto;
+    
+    /* LINKS - Estados e pseuo-classes */
+}
+a {
+    text-decoration: none;  /* Remove o sublinhado */
+    font-weight: bold;  /* Texto em negrito */
+    transition: all 0.3s ease;  /* Animação suave */
+    padding: 20px;
+ }
+ a:link {
+    color: aqua;
+ }
+ a:visited {
+    color: cornflowerblue;
+ }
+ /* Quando o mouse esta em cima do (hover) */
+ a:hover {
+    text-decoration: underline;
+    color: deepskyblue;
+    background-color: gray;
+    border-radius: 30px; 
+    padding: 7px;
+ }
+ .link-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(40, 95, 154);
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+ }
+.link-topo:hover {
+    background-color: cornsilk;
+    border-radius: 50%;
+}

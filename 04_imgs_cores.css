@@ -1,1 +1,18 @@
-/* Digitação (Aqui) */
+h1 {
+    /* offset-x    offset-y    blur   color */
+    text-shadow: 2px 1px 2px rgb(0, 128, 255);
+}
+img {
+    border: 3px solid red;
+    border-radius: 50px;
+    transition: transform 0.3s;
+}
+img:hover {
+    /* transform: scale(1.10); */
+    /* transform: rotate(3deg); */
+    /* transform: translateY(-20px); */
+    
+    /* transform: scale(1.10) rotate(3deg); */
+    transform: scale(1.10) rotate(3deg);
+    border-color: rgb(98, 0, 255);
+}

@@ -1,1 +1,114 @@
-/* Digitar o código da imagem (05a_desafio_CSS) da pasta Códigos */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(180deg, #0f0f23 0%, #1a1a3e 100%);
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Titulo com efeito neon/arcade */
+.titulo-principal {
+    text-align: center;
+    font-size: 48px;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+    animation: piscar 2s infinite;
+    margin: 20px 0; 
+}
+
+@keyframes piscar {
+    0%, 100% { opacity: 1; }
+    50% {opacity: 0.8; }
+}
+
+.subtitulo {
+    text-align: center;
+    color: #00ffff;
+    font-size: 18px;
+}
+
+/* Navegação estilo arcade */
+.navegacao {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.navegacao a {
+    background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+    color: black;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.navegacao a:hover {
+    transform: scale(1.1) rotate(-2deg);
+}
+
+/* Banner com borda pixelada */
+.banner-principal {
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+    height: 120px;
+    border: 4px solid #00ff00;
+    box-shadow: 0 0 20px #00ff00;
+}
+
+/* Titulos de seção */
+.titulo-secao {
+    color: #ffff00;
+    border-bottom: 3px dashed #ff00ff;
+    padding-bottom: 10px;
+}
+
+/* Lista de consoles estilo retro */
+.lista-consoles {
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border: 2px solid #00ffff;
+    list-style: none;
+}
+
+.lista-consoles li::before {
+    content: "➤ ";
+    color: #00ff00;
+}
+
+/* Tabela estilo arcade */
+.tabela-precos {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(0,0,0,0.7);
+    margin: 20px 0;
+}
+
+.tabela-precos th {
+    background: linear-gradient(90deg, #ff00ff, #00ffff;
+    color: #000);
+    padding: 10px;
+}
+
+.tabela-precos td {
+    border: 1px solid #00ff00;
+    padding: 10px;
+}
+
+.preco {
+    color: #00ff00;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    color: #888;
+    margin-top: 50px;
+    font-size: 14px;
+}
