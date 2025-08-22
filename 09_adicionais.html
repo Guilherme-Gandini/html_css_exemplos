@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Complementares HTML</title>
+    <link rel="stylesheet" href="09_adicionais.css">
+</head>
+<body>
+    <h1>Elementos Complementares e Boas Práticas</h1>
+    
+    <section class="secao-texto">
+        <h2>Elementos de Texto Especiais</h2>
+        
+        <p>Texto normal com <mark>destaque amarelo</mark> e <code>código inline</code>.</p>
+        
+        <blockquote cite="https://www.w3.org/standards/">
+            <p>"A Web é para todos" - princípio de acessibilidade da W3C.</p>
+        </blockquote>
+        
+        <p>Citação curta: <q>HTML é a linguagem da web</q>.</p>
+        
+        <p>Fórmula química: H<sub>2</sub>O e expressão matemática: E=mc<sup>2</sup></p>
+        
+        <p>Texto <del>removido</del> e texto <ins>inserido</ins> para mostrar alterações.</p>
+        
+        <pre><code>
+function exemplo() {
+    console.log("Código pré-formatado");
+}
+        </code></pre>
+    </section>
+    <hr>
+    
+    <section class="secao-semantica">
+        <h2>Elementos Semânticos Adicionais</h2>
+        
+        <details class="caixa-expansivel">
+            <summary>Clique para expandir informações</summary>
+            <p>Conteúdo que pode ser expandido ou recolhido.</p>
+        </details>
+        <br>
+        
+        <figure class="figura-exemplo">
+            <img src="assets/grafico.jpg" alt="Gráfico de vendas" width="200">
+            <figcaption>Figura 1: Gráfico de vendas do primeiro trimestre</figcaption>
+        </figure>
+    </section>
+    <hr>
+       
+    <section class="secao-caracteres">
+        <h2>Caracteres Especiais (Entidades HTML)</h2>
+        
+        <p class="simbolos">Símbolos especiais: &copy; &reg; &trade; &hearts; &spades; &clubs; &diams;</p>
+        <p class="reservados">Caracteres reservados: &lt;tag&gt; &amp; &quot;aspas&quot; &apos;apóstrofe&apos;</p>
+        <p class="moedas">Caracteres especiais: &euro; &pound; &yen; &cent;</p>
+        <p class="setas">Setas: &larr; &uarr; &rarr; &darr; &harr; &crarr;</p>
+        <p class="matematicos">Matemáticos: &plusmn; &times; &divide; &ne; &le; &ge; &infin;</p>
+    </section>
+    <hr>
+    
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* === ESTILIZANDO TABELAS === */
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+h2 {
+    color: #34495e;
+    margin-top: 30px;
+}
+
+/* === Estilo base para todas as tabelas === */
+
+/* Continuar digitação (Aqui) */

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio completo demonstrando HTML">
+    <meta name="keywords" content="HTML, desenvolvimento, web, portfólio">
+    <meta name="author" content="Estudante SENAI">
+    <title>Portfólio - Demonstração HTML Completa</title>
+    <link rel="stylesheet" href="10_completo.css">
+</head>
+<body>
+    <header class="header-principal">
+        <h1>João Silva - Desenvolvedor Web</h1>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="sobre" class="secao-sobre">
+            <h2>Sobre Mim</h2>
+            <img src="assets/avatar_h.jpg" alt="Foto de João Silva" class="foto-perfil">
+            
+            <p>Sou estudante de <strong>Desenvolvimento de Sistemas</strong> no SENAI.</p>
+            <p>Tenho conhecimento em <em>HTML</em>, <em>CSS</em> e estou aprendendo <em>JavaScript</em>.</p>
+            
+            <h3>Minhas Habilidades:</h3>
+            <ul class="lista-habilidades">
+                <li>HTML5 Semântico</li>
+                <li>CSS3 e Responsividade</li>
+                <li>Formulários e Validação</li>
+                <li>Estruturação de Dados</li>
+            </ul>
+        </section>
+        
+        <section id="projetos" class="secao-projetos">
+            <h2>Meus Projetos</h2>
+            <table class="tabela-projetos">
+                <thead>
+                    <tr>
+                        <th>Projeto</th>
+                        <th>Tecnologias</th>
+                        <th>Status</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Site Pessoal</td>
+                        <td>HTML, CSS</td>
+                        <td class="status-concluido">Concluído</td>
+                        <td><a href="projeto1.html">Ver Projeto</a></td>
+                    </tr>
+                    <tr>
+                        <td>Sistema de Cadastro</td>
+                        <td>HTML, CSS, JavaScript</td>
+                        <td class="status-andamento">Em Andamento</td>
+                        <td><a href="projeto2.html">Ver Projeto</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="contato" class="secao-contato">
+            <h2>Entre em Contato</h2>
+            
+            <form action="enviar.php" method="post" class="form-contato">
+                <fieldset>
+                    <legend>Dados do Contato</legend>
+                    
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br><br>
+                    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="assunto">Assunto:</label><br>
+                    <select id="assunto" name="assunto">
+                        <option value="trabalho">Oportunidade de Trabalho</option>
+                        <option value="projeto">Proposta de Projeto</option>
+                        <option value="geral">Contato Geral</option>
+                    </select><br><br>
+                    
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="5"></textarea><br><br>
+                    
+                    <input type="submit" value="Enviar Mensagem" class="btn-submit">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="footer-principal">
+        <p>&copy; 2025 João Silva. Desenvolvido durante o curso do SENAI.</p>
+        <p>
+            <a href="mailto:joao@exemplo.com">joao@exemplo.com</a> | 
+            <a href="tel:+5511999999999">(11) 99999-9999</a>
+        </p>
+    </footer>
+</body>
+</html>

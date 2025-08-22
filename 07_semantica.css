@@ -1,0 +1,10 @@
+/* === LAYOUT COM FLEXBOX === */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui padding e border no tamanho */
+}
+
+
+/* Continuar digitação (Aqui)  */

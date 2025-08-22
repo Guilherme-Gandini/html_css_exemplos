@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Desenvolvedor Web">
+    <meta name="keywords" content="HTML5, semântica, desenvolvimento">
+    <title>Estrutura Semântica HTML5</title>
+    <link rel="stylesheet" href="07_semantica.css">
+</head>
+<body>
+    <header class="cabecalho-principal">
+        <h1>Meu Site Pessoal</h1>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="conteudo-principal">
+        <section id="inicio" class="secao-destaque">
+            <h2>Bem-vindo ao meu site</h2>
+            <p>Este é um exemplo de estrutura semântica em HTML5.</p>
+        </section>
+        
+        <article class="artigo-blog">
+            <header>
+                <h2>Artigo sobre HTML5</h2>
+                <time datetime="2025-01-15">15 de Janeiro, 2025</time>
+            </header>
+            
+            <p>HTML5 trouxe elementos semânticos importantes...</p>
+            
+            <footer>
+                <p>Por: Autor do Artigo</p>
+            </footer>
+        </article>
+        
+        <section id="servicos" class="secao-servicos">
+            <h2>Nossos Serviços</h2>
+            <article>
+                <h3>Desenvolvimento Web</h3>
+                <p>Criamos sites modernos e responsivos.</p>
+            </article>
+        </section>
+    </main>
+    
+    <aside class="barra-lateral">
+        <h3>Links Úteis</h3>
+        <ul>
+            <li><a href="https://www.w3c.org">W3C</a></li>
+            <li><a href="https://developer.mozilla.org">MDN</a></li>
+        </ul>
+    </aside>
+    
+    <footer class="rodape-principal">
+        <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+        <address>
+            Contato: <a href="mailto:contato@meusite.com">contato@meusite.com</a>
+        </address>
+    </footer>
+</body>
+</html>

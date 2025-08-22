@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas Avançadas e Multimídia</title>
+    <link rel="stylesheet" href="08_tab_multimidea.css">
+</head>
+<body>
+    <h1>Relatório de Vendas</h1>
+    
+    <table class="tabela-relatorio">
+        <caption>Vendas por Região - 2025</caption>
+        <thead>
+            <tr>
+                <th>Região</th>
+                <th>1º Tri</th>
+                <th>2º Tri</th>
+                <th>3º Tri</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Norte</td>
+                <td class="num-right">R$ 10.000</td>
+                <td class="num-right">R$ 12.000</td>
+                <td class="num-right">R$ 15.000</td>
+                <td class="num-right total-linha"><strong>R$ 37.000</strong></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total Geral</td>
+                <td class="num-right">R$ 10.000</td>
+                <td class="num-right">R$ 12.000</td>
+                <td class="num-right">R$ 15.000</td>
+                <td class="num-right">R$ 37.000</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <hr>
+
+    <h2>Inserindo vídeos locais</h2>
+    <video class="video-local" width="500" poster="assets/limoes-capa.png" controls>
+        <source src="assets/meu-video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+    </video>
+    <hr>
+
+    <h2>Inserindo vídeos do YouTube</h2>
+    <iframe class="video-youtube" width="560" height="315"
+        src="https://www.youtube.com/embed/eqUFcr1mI3Y"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+    <hr>
+
+    <h2>Vamos aprender a reproduzir áudios em HTML5.</h2>
+    <audio class="player-audio" preload="metadata" autoplay controls>
+        <source src="assets/happy-mistake.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio HTML5.
+    </audio>
+</body>
+</html>

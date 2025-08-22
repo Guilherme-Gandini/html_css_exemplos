@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários HTML</title>
+    <link rel="stylesheet" href="06_formularios.css">
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    
+    <form action="processar.php" method="post" class="formulario">
+        
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" required><br><br>
+        
+        <label>Sexo:</label><br>
+        <input type="radio" id="masculino" name="sexo" value="M">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="feminino" name="sexo" value="F">
+        <label for="feminino">Feminino</label><br><br>
+        
+        <label>Interesses:</label><br>
+        <input type="checkbox" id="programacao" name="interesses[]" value="programacao">
+        <label for="programacao">Programação</label><br>
+        <input type="checkbox" id="design" name="interesses[]" value="design">
+        <label for="design">Design</label><br><br>
+        
+        <label for="cidade">Cidade:</label><br>
+        <select id="cidade" name="cidade">
+            <option value="">Selecione uma cidade</option>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="mg">Belo Horizonte</option>
+        </select><br><br>
+        
+        <label for="comentarios">Comentários:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="foto">Foto:</label><br>
+        <input type="file" id="foto" name="foto"><br><br>
+        
+        <button type="submit" class="btn-enviar">Enviar</button>
+        <button type="reset" class="btn-limpar">Limpar</button>
+    </form>
+</body>
+</html>

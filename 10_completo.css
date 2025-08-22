@@ -1,0 +1,140 @@
+/* === PORTFÓLIO RESPONSIVO COMPLETO === */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* === HEADER COM GRADIENT === */
+.header-principal {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    position: sticky; /* Header fixo ao rolar */
+    top: 0;
+    z-index: 100;
+}
+
+.nav-menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Quebra linha em telas pequenas */
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.nav-menu a:hover {
+    background: rgba(255,255,255,0.3);
+    transform: scale(1.1);
+}
+
+/* === SEÇÕES === */
+section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #667eea;
+}
+
+.lista-habilidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    list-style: none;
+}
+
+.lista-habilidades li {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* === TABELA RESPONSIVA === */
+.tabela-projetos {
+    width: 100%;
+    overflow-x: auto; /* Scroll horizontal em telas pequenas */
+}
+
+.status-concluido { color: #27ae60; font-weight: bold; }
+.status-andamento { color: #f39c12; font-weight: bold; }
+
+/* === FORMULÁRIO === */
+.form-contato fieldset {
+    border: 2px solid #667eea;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.form-contato input,
+.form-contato select,
+.form-contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(102,126,234,0.4);
+}
+
+/* === FOOTER === */
+.footer-principal {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer-principal a {
+    color: #3498db;
+}
+
+/* === MEDIA QUERY - RESPONSIVIDADE === */
+@media (max-width: 768px) {
+    section { margin: 20px; padding: 20px; }
+    .nav-menu ul { flex-direction: column; }
+    .lista-habilidades { grid-template-columns: 1fr; }
+}

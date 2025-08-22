@@ -1,0 +1,64 @@
+/* === CSS GRID E MULTIMÍDIA === */
+
+/* Continuar digitação (Abaixo em Multimídea)  */
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+/* === TABELA COM GRID-LIKE STYLING === */
+.tabela-relatorio {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    overflow: hidden; /* Esconde bordas que excedem */
+    border-radius: 10px;
+}
+
+.tabela-relatorio caption {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+.tabela-relatorio th {
+    background-color: #34495e;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.tabela-relatorio td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.num-right {
+    text-align: right;
+    font-family: 'Courier New', monospace; /* Fonte monoespaçada para números */
+}
+
+.total-linha {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.tabela-relatorio tfoot {
+    background-color: #ffeb3b;
+    font-weight: bold;
+}
+
+/* === ESTILIZANDO MULTIMÍDIA === */
+
+/* Container para vídeos e áudio */

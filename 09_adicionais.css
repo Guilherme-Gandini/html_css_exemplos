@@ -1,0 +1,118 @@
+/* === ANIMAÇÕES E EFEITOS AVANÇADOS === */
+
+body {
+    font-family: Georgia, serif;
+    background: linear-gradient(45deg, #a8edea, #fed6e3);
+    padding: 30px;
+    line-height: 1.8;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    animation: fadeIn 2s ease-in; /* Animação de entrada */
+}
+
+/* === KEYFRAMES (ANIMAÇÕES) === */
+
+
+/* Continuar digitação (Aqui)  */
+
+
+/* === ELEMENTOS DE TEXTO === */
+mark {
+    background: linear-gradient(90deg, #fff59d, #ffeb3b);
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+code {
+    background-color: #2c3e50;
+    color: #4caf50;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+}
+
+blockquote {
+    border-left: 5px solid #3498db;
+    margin-left: 0;
+    padding-left: 20px;
+    font-style: italic;
+    background: rgba(255,255,255,0.5);
+    padding: 15px 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+q {
+    quotes: "«" "»"; /* Define aspas personalizadas */
+}
+
+sub, sup {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+del {
+    color: #999;
+    text-decoration: line-through wavy red; /* Linha ondulada */
+}
+
+ins {
+    background-color: #c8e6c9;
+    text-decoration: none;
+}
+
+pre {
+    background: #263238;
+    color: #aed581;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto; /* Scroll horizontal se necessário */
+}
+
+/* === ELEMENTOS SEMÂNTICOS === */
+.caixa-expansivel {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.caixa-expansivel:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.caixa-expansivel summary {
+    font-weight: bold;
+    color: #3498db;
+}
+
+.figura-exemplo {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    animation: pulse 3s infinite; /* Animação contínua */
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+/* === CARACTERES ESPECIAIS === */
+.secao-caracteres p {
+    background: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.secao-caracteres p:hover {
+    transform: translateX(10px);
+    box-shadow: -5px 5px 10px rgba(0,0,0,0.1);
+}
