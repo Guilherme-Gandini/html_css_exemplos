@@ -5,6 +5,69 @@
     padding: 0;
     box-sizing: border-box; /* Inclui padding e border no tamanho */
 }
-
-
-/* Continuar digitação (Aqui)  */
+body {
+    font-family: 'Segoe UI';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Estilos do Header (Cabeçalho) */
+.cabecalho-principal {
+    background: linear-gradient(90deg, #2c3e50, #3498db);
+    color: white;
+    padding: 20px;
+}
+.menu-principal ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+}
+.menu-principal a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.menu-principal a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* color: rgba(255, 255, 255, 0.2); */
+}
+.cabecalho-principal {
+    flex: 0.5;
+    padding: 20px;
+}
+.barra-lateral {
+    flex: 1;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+}
+/* Estilo Articles */
+.secao-destaque,
+.artigo-blog,
+.secao-servicos {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgb(0,0,0,0.1);
+}
+.artigo-blog header {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+time {
+    color: #7f8c8d;
+    font-style: italic;
+}
+.rodape-principal {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

@@ -18,4 +18,53 @@ h2 {
 
 /* === Estilo base para todas as tabelas === */
 
-/* Continuar digitação (Aqui) */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgb(0,0,0,0.1);
+}
+
+.tabela-produtos {
+    border: 2px solid #3498db;
+}
+.tabela-produtos thead {
+    background-color: #3498db;
+    color: #fff;
+}
+.tabela-produtos th,
+.tabela-produtos td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ecf0f1;
+}
+/* zebrando em linhas (impares) alternadas */
+.tabela-produtos tbody tr:nth-child(odd) {
+    background-color: #999;
+}
+.tabela-produtos tbody tr:hover {
+    background-color: #f9f8fa;
+    cursor: pointer;
+}
+
+.tabela-vendas {
+    border: 1px solid #27ae60;
+}
+
+.tabela-vendas th {
+    padding: 10px;
+    background-color: #27ae60;
+    color: #fff;
+    font-size: 18px;
+}
+.valor {
+    text-align: right;
+    font-weight: bold;
+    color: #2c3e50;
+}
+.total {
+    background-color: #f1c40f;
+    font-weight: bold;  
+}
