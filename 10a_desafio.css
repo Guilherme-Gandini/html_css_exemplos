@@ -1,1 +1,159 @@
-/* Digitar o código da imagem (10a_desafio_CSS) da pasta Códigos */
+/* desafio da technews*/
+
+* {
+    margin 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: black;
+    color: #e4e4e7;
+    line-height: 1.6;
+}
+
+/*header com glasphorism*/
+
+.cabecalho {
+    background: linear-gradient(135deg, white, rgb(243,55,86));
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid white;
+    padding: 30px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+   font-size: 36px;
+   background: linear-gradient(90deg blue, rgb(238,67,96));
+   -webkit-background-clip: text;
+   /* -webkit-text-fill-color: transp0arent; */
+   background-clip: text;
+   
+}
+
+.tagline{
+    color #94a3b8;
+    margin-top: 10px;
+}
+
+/*layout principal com grid*/
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/*Artigo com card moderno*/
+
+.artigo-destaque {
+    background: linear-gradient(135deg, black, gray);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid white;
+    transition: transform 0.3;
+}
+
+.artigo-destaque:hover {
+    transform: translateY(-5px)
+}
+
+.artigo-destaque h2 {
+    color: rgb(98,98,237);
+    margin-bottom: 10px;
+}
+
+.data {
+    color: #e4e4e7;
+    font-size: 14px
+}
+
+.leia-mais {
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.leia-mais summary {
+    color: gold;
+    font-weight: bold;
+}
+
+/*Seção de video*/
+.secao-video{
+    text-align: center;
+}
+
+.video-embed {
+    border-radius: 15px;
+    border: 2px solid turquoise;
+    margin-top: 15px;
+}
+
+/*newsletter com gradiante*/
+
+.secao-newsletter {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.form-newsletter input,
+.form-newsletter select{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+}
+.checkbox-container {
+margin: 15px 0;
+}
+
+.btn-inscrever {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg gold, #ef4444);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2;
+}
+
+.btn-inscrever:hover {
+    transform: scale (1.05)
+}
+
+/*footer minimalista*/
+
+.rodape{
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid white;
+    color: #64748b;
+}
+
+.rodabe a {
+    color: rgb(175,175,255);
+}
+
+/*responsividade*/
+@media (min-width: 768px) {
+    .conteudo {
+        grid-template-columns: 2fr 1fr;
+    }
+    .artigo-destaque {
+        grid-column: span 2;
+    }
+}
